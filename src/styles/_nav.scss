@@ -1,0 +1,35 @@
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  h1 {
+    font-size: 2rem;
+    background: -webkit-linear-gradient(rgb(94, 173, 178), rgb(77, 89, 103));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border: 2px solid rgb(186, 74, 70);
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: rgb(253, 240, 221);
+      color: rgb(186, 74, 70);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    button {
+      z-index: 10;
+    }
+  }
+}
